@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PokemonController;
-use App\Http\Controllers\PokeApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +15,3 @@ use App\Http\Controllers\PokeApiController;
 */
 Route::get('/pokemon', [PokemonController::class, 'index']);
 
-Route::get('/pokeapi', [PokeApiController::class, 'index']);

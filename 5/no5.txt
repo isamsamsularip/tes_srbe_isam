@@ -1,0 +1,8 @@
+SELECT p.category, SUM(p.sale_amount) as total_revenue
+FROM products p
+INNER JOIN (
+  SELECT SUM(sale_amount) as total_sales
+  FROM products
+) t
+ON 1=1
+GROUP BY p.category

@@ -1,0 +1,3 @@
+SELECT category, SUM(sale_amount) AS total_revenue
+FROM products
+GROUP BY category
